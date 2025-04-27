@@ -127,15 +127,15 @@
 @layer utilities {
   :root {
     /* BACKGROUND */
-    --bg-cream: url(/illustration/bg-cream.webp);
-    --bg-sky-blue: url(/illustration/bg-sky-blue.webp);
-    --bg-sea-blue: url(/illustration/bg-sea-blue.webp);
+    --bg-cream: url(../public/illustration/bg-cream.webp);
+    --bg-sky-blue: url(../public/illustration/bg-sky-blue.webp);
+    --bg-sea-blue: url(../public/illustration/bg-sea-blue.webp);
 
     /* WAVE */
-    --wave-cream: url(/illustration/wave-cream.webp);
-    --wave-cream-mild: url(/illustration/wave-cream-mild.webp);
-    --wave-sky-blue: url(/illustration/wave-sky-blue.webp);
-    --wave-sea-blue: url(/illustration/wave-sea-blue.webp);
+    --wave-cream: url(../public/illustration/wave-cream.webp);
+    --wave-cream-mild: url(../public/illustration/wave-cream-mild.webp);
+    --wave-sky-blue: url(../public/illustration/wave-sky-blue.webp);
+    --wave-sea-blue: url(../public/illustration/wave-sea-blue.webp);
 
     --wave-size: 3600px 64px;
 
