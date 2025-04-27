@@ -39,7 +39,8 @@ export default function Home() {
 }
 
 function Service({ service }: { service: Service }) {
-  const { name, activity, illust, duration, links } = service
+  const { name, activity, illust, links } = service
+  // duration, 
   return (
     <motion.div
       initial={{

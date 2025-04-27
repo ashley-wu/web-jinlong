@@ -8,8 +8,9 @@ import {
 } from "@/components/ui/tooltip"
 import { PATH } from "@/lib/path"
 import { 
-  PHONE, ADDRESS, FACEBOOK_URL, LINE_URL, INSTAGRAM_URL, EMAIL, GOOGLE_MAP_URL 
+  PHONE, ADDRESS, EMAIL, GOOGLE_MAP_URL 
 } from "@/data/info"
+// FACEBOOK_URL, LINE_URL, INSTAGRAM_URL, 
 
 // LOGO
 import imgLogo from "@/public/img/jinlong-logo.webp"
@@ -110,17 +111,17 @@ function ContactWithTooltip({ info, children }: { info: string, children: ReactN
   )
 }
 
-function ContactWithLink({ url, children }: { url: string, children: ReactNode }) {
-  return (
-    <Link
-      href={url}
-      className="size-10 grid place-content-center"
-      target="_blank"
-    >
-      {children}
-    </Link>
-  )
-}
+// function ContactWithLink({ url, children }: { url: string, children: ReactNode }) {
+//   return (
+//     <Link
+//       href={url}
+//       className="size-10 grid place-content-center"
+//       target="_blank"
+//     >
+//       {children}
+//     </Link>
+//   )
+// }
 
 export {
   Footer

@@ -9,7 +9,7 @@ import { type CarouselProps } from "@/components/carousel/config"
 function FadeCarousel({ 
   slides, options, className = "" 
 }: CarouselProps) {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+  const [emblaRef, _] = useEmblaCarousel(options, [
     Fade(),
     Autoplay({
       playOnInit: true,

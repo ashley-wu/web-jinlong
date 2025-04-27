@@ -51,10 +51,11 @@ function Course({ course, index }: Props) {
 }
 
 function Scene({
-  scene, route, isLast, setProgress
+  scene, setProgress
 }: {
-  scene: Scene, route: "sea" | "land", isLast: boolean, setProgress: Function
+  scene: Scene, route: "sea" | "land", isLast: boolean, setProgress: () => void
 }) {
+  // route, isLast, 
   const ref = useRef(null)
   const isInView = useInView(ref, { amount: 0.7 })
 
@@ -62,7 +63,7 @@ function Scene({
     if (isInView) {
       setProgress()
     }
-  }, [isInView])
+  }, [isInView, setProgress])
 
 
   return (

@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image"
-import { motion, steps } from "motion/react"
+import { motion } from "motion/react"
+// steps
 
 import { FadeCarousel } from "@/components/carousel/FadeCarousel"
 import { carouselOptions } from "@/components/carousel/config"
