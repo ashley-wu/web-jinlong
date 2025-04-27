@@ -1,16 +1,21 @@
 import { ReactNode } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { MapPin } from "lucide-react"
 
 import { 
   Tooltip, TooltipProvider, TooltipContent, TooltipTrigger
 } from "@/components/ui/tooltip"
+import { Phone } from "@/components/icon/Phone"
+import { Mail } from "@/components/icon/Mail"
+import { Facebook } from "@/components/icon/Facebook"
+import { Instagram } from "@/components/icon/Instagram"
+import { Line } from "@/components/icon/Line"
 import { PATH } from "@/lib/path"
 import { 
-  PHONE, ADDRESS, EMAIL, GOOGLE_MAP_URL 
-} from "@/data/info"
-// FACEBOOK_URL, LINE_URL, INSTAGRAM_URL, 
+  PHONE, ADDRESS, EMAIL, GOOGLE_MAP_URL, 
+  FACEBOOK_URL, LINE_URL, INSTAGRAM_URL
+} from "@/data/info" 
 
 // LOGO
 import imgLogo from "@/public/img/jinlong-logo.webp"
@@ -81,17 +86,28 @@ function Contact() {
     <div className="flex justify-center gap-x-3">
       {/* PHONE */}
       <ContactWithTooltip info={PHONE}>
-        <span className="p-1.5 bg-primary rounded-full text-white">
-          <Phone size={16} />
-        </span>
+        <Phone />
       </ContactWithTooltip>
 
       {/* EMAIL */}
       <ContactWithTooltip info={EMAIL}>
-        <span className="p-1.25 bg-primary rounded-full text-white">
-          <Mail size={18} />
-        </span>
+        <Mail />
       </ContactWithTooltip>
+
+      {/* FACEBOOK */}
+      <ContactWithLink url={FACEBOOK_URL}>
+        <Facebook />
+      </ContactWithLink>
+
+      {/* INSTAGRAM */}
+      <ContactWithLink url={INSTAGRAM_URL}>
+        <Instagram />
+      </ContactWithLink>
+
+      {/* LINE */}
+      <ContactWithLink url={LINE_URL}>
+        <Line />
+      </ContactWithLink>
     </div>
   )
 }
@@ -111,17 +127,17 @@ function ContactWithTooltip({ info, children }: { info: string, children: ReactN
   )
 }
 
-// function ContactWithLink({ url, children }: { url: string, children: ReactNode }) {
-//   return (
-//     <Link
-//       href={url}
-//       className="size-10 grid place-content-center"
-//       target="_blank"
-//     >
-//       {children}
-//     </Link>
-//   )
-// }
+function ContactWithLink({ url, children }: { url: string, children: ReactNode }) {
+  return (
+    <Link
+      href={url}
+      className="size-10 grid place-content-center"
+      target="_blank"
+    >
+      {children}
+    </Link>
+  )
+}
 
 export {
   Footer
