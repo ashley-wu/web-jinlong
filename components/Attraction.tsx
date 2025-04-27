@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image"
-import { motion } from "motion/react"
-// steps
+import { motion, steps } from "motion/react"
 
 import { FadeCarousel } from "@/components/carousel/FadeCarousel"
 import { carouselOptions } from "@/components/carousel/config"
@@ -11,6 +10,7 @@ import { attractions, type Attraction } from '@/data/attraction'
 import logotype from "@/public/illustration/jinlong-logotype.webp"
 import illustKeelungIslet from "@/public/illustration/keelung-islet-cut.webp"
 import illustJinlong6 from "@/public/illustration/jinlong6.webp"
+import illustSun from "@/public/illustration/sun.webp"
 import illustBirdBlue from "@/public/illustration/bird-blue.webp"
 import illustBirdPink from "@/public/illustration/bird-pink.webp"
 
@@ -36,6 +36,25 @@ function Attraction() {
           options={carouselOptions}
           className="h-screen"
         />
+
+        {/* SUN */}
+        <motion.figure
+          animate={{
+            rotate: [0, 45, 90, 135, 180, 225, 270, 315]
+          }}
+          transition={{
+            ease: steps(8),
+            duration: 48,
+            repeat: Infinity
+          }}
+          className="absolute z-[100] size-30 md:size-40 top-[8vw] right-[6vw] md:right-[12vw]"
+        >
+          <Image
+            src={illustSun}
+            alt=""
+            priority
+          />
+        </motion.figure>
 
         {/* BIRD BLUE */}
         <motion.figure
