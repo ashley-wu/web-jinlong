@@ -89,7 +89,8 @@ function ButtonLinkWithMotion({
   return (
     <ButtonWithMotion
       asChild
-      className="rounded-full shadow-none border-primary/90 border-2"
+      variant="shadow"
+      className="shadow-none"
     >
       <Link
         href={link.path}
