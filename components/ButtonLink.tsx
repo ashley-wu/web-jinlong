@@ -21,6 +21,7 @@ function ButtonLink({
   return (
     <Button
       asChild={asChild}
+      variant="shadow"
       className={className}
     >
       <Link
