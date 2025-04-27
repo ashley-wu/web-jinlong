@@ -4,7 +4,7 @@ import { AirVent, MicVocal, LifeBuoy, IdCard, Beef } from "lucide-react"
 import { fleetMetadata } from "@/lib/metadata"
 import { yachts, type Yacht } from "@/data/yacht"
 
-export const metadat = fleetMetadata
+export const metadate = fleetMetadata
 
 export default function Fleet() {
   return (
