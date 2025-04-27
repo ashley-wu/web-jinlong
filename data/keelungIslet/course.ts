@@ -77,11 +77,11 @@ const headToKeelungIslet: Course = {
       description: "登島前會繞島一周，先從海上欣賞不同角度的基隆嶼美景。",
       image: imgHeadToKeelungIslet04
     },
-    {
-      name: "犀牛石",
-      description: "彷彿像一隻趴著休息的犀牛。",
-      image: imgHeadToKeelungIslet05
-    },
+    // {
+    //   name: "犀牛石",
+    //   description: "彷彿像一隻趴著休息的犀牛。",
+    //   image: imgHeadToKeelungIslet05
+    // },
     {
       name: "大象石 & 雞心嶼",
       description: "從基隆嶼的東北側視角，岩礁地形加上海蝕洞，形成了看似一隻大象的有趣景觀。",
