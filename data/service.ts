@@ -16,7 +16,7 @@ type Service = {
   links: {
     title: string
     path: string
-    isExternal?: boolean
+    isExternalLink?: boolean
   }[]
 }
 
@@ -46,7 +46,7 @@ const services: Service[] = [
     duration: "5 ～ 9月",
     illust: illustSulfricFireFishing,
     links: [
-      { title: "預約金山蹦火仔行程", path: SULFRIC_FIRE_FISHING_RESERVATION_URL, isExternal: true },
+      { title: "預約金山蹦火仔行程", path: SULFRIC_FIRE_FISHING_RESERVATION_URL, isExternalLink: true },
     ]
   },
   {
