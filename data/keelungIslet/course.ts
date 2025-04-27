@@ -170,7 +170,7 @@ const hikingTrail: Course = {
   scenes: [
     {
       name: "登山步道",
-      description: "全長 780 公尺，步行時間約 40 分鐘。前半段是有整修過相對好走的木棧道，在涼亭過後則是碎石較多的小徑步道。",
+      description: "全長 730 公尺，步行時間約 40 分鐘。前半段是有整修過相對好走的木棧道，在涼亭過後則是碎石較多的小徑步道。",
       image: imgHikingTrail01
     },
     {
